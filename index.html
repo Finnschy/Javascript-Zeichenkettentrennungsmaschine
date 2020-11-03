@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body id="main">
     <section>
         <h1>Zeichenkettentrennungsmaschine</h1>
         <form action="">
             <label for="toCutString">Zu trennende Zeichenkette:</label>
             <br>
-            <input type="text" name="toCutString" id="cutString" placeholder="Gib was ein!">
+            <input type="text" name="toCutString" id="toCutString" placeholder="Gib was ein!">
             <br>
             <label for="posString">Zeichenkette für die Trennungsposition</label>
             <br>
             <input type="text" name="posString" id="posString" placeholder="Gib was ein!">
             <br>
-            <input type="radio" name="radio" id="beforeRadio" checked /> davor trennen
+            <input type="radio" name="radio" id="beforeCut" checked/> davor trennen
             <br>
-            <input type="radio" name="radio" id="afterRadio" /> danach trennen
+            <input type="radio" name="radio" id="afterCut"/> danach trennen
             <br>
-            <input type="submit" value="Trennen">
+            <input type="submit" value="Trennen" onclick="cutString()">
         </form>
 
         <h1>Ausgabe</h1>
